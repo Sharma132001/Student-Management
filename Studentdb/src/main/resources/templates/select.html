@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+ <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>MAJOR</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="a : ${abc}">
+                <td th:text="${a.id}">ID</td>
+                <td th:text="${a.name}">NAME</td>
+                <td th:text="${a.Major}">MAJOR</td>
+               
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
